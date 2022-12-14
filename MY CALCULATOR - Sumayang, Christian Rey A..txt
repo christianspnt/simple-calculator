@@ -1,0 +1,62 @@
+#include<stdio.h>
+#define Break '\n'
+
+     char rey; //for operator
+     double christian, sumayang, ardita; // for two operand
+
+void main(){
+
+     back: // jump to go back
+
+     printf("Input format 1+1 \nOperators symbol (+  -  /  *)"); //displayed
+     printf("\nMY CALCULATOR - Sumayang, Christian Rey A.");
+     printf("\nInput Value to Calculate: ");
+     scanf("%lf%c%lf",&christian,&rey,&sumayang);
+
+     if(rey == '+'){
+        ardita = christian + sumayang;
+        printf("Addition on two operands: %.2lf",ardita);
+        printf("%c",Break);
+        system("pause");
+        system("cls");
+        goto back; // go back to main display
+     }
+
+     else if(rey == '-'){
+        ardita = christian - sumayang;
+        printf("Subtraction on two operands: %.2lf",ardita);
+        printf("%c",Break);
+        system("pause");
+        system("cls");
+        goto back; // go back to main display
+     }
+
+     else if(rey == '/'){
+        ardita = christian / sumayang;
+        printf("Division on two operands: %.2lf",ardita);
+        printf("%c",Break);
+        system("pause");
+        system("cls");
+        goto back; // go back to main display
+     }
+
+     else if(rey == '*'){
+        ardita = christian * sumayang;
+        printf("Multiplication on two operands: %.2lf",ardita);
+        printf("%c",Break);
+        system("pause");
+        system("cls");
+        goto back; // go back to main display
+     }
+
+     else{
+        ardita = christian, sumayang;
+        printf("Invalid");
+        printf("%c",Break);
+        system("pause");
+        system("cls");
+        goto back; // go back to main display
+     }
+
+
+}
